@@ -1,0 +1,75 @@
+/*default styling also known as external CSS*/
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header h1{
+    font-weight: 400;
+}
+header{
+    /* this is display property it will 
+    allign side by side, we will learn it 
+    later*/
+    display:flex;
+    /*Flex is the value of css display property. 
+    By using display flex in parent elements, child elements automatically align like 
+    columns with auto width and auto height.*/
+    /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/#:~:text=A%20flex%20container%20expands%20items,which%20is%20horizontally%2Dbased).*/
+    justify-content: space-between;
+    margin: 0 3rem
+}
+
+ul{
+    display: flex;
+    justify-content:space-between;
+}
+li{
+    list-style: none;
+}
+nav{
+    width: 20rem;
+    position: relative;
+    top: 1rem;
+}
+.showcase{
+    width: 95vw;
+    margin:1rem
+}
+div{
+    width: 90;
+}
+article{
+    display:flex;
+}
+.container{
+    margin: 5px;
+    padding: 10px;
+    
+}
+.container{
+    text-align: center;
+    /*here when we use text allign to a certain class that means 
+    whatever there is in that class that will be alligned. it is not
+    necessery that it should be text only if image is there it will be alligned too.*/
+}
+a{
+    text-decoration: none;
+    /*for removing underline from anchor tag texts*/
+}
+a:hover{
+        color: rgb(84, 6, 6);
+        font-style: oblique;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    /*align items and justify content both are the flex items so they will 
+    work with display flex property*/
+}
+    
